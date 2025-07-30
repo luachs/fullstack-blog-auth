@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1753877575325,
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$08$tM0t1mFCtBe1kPoPjBsAvO10mdgCW8tJC9FIPEXBwG3Gt3uwNlfaW",
+      "role": "admin"
+    },
+    {
+      "id": 1753877745550,
+      "name": "Phát",
+      "email": "phat0@gmail.com",
+      "password": "$2b$08$NGMZzMhDT1JxzyxuaEILC.QhKrFPXGogwmnyIzzXgpDfxWiNJiib6",
+      "role": "user"
+    },
+    {
+      "id": 1753879460127,
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "$2b$08$d2RJVdA21mXToc32mIlli.cFYoPLX0IAd4QwEJ5nqJHHaJ3PqmqIO",
+      "role": "user"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1753877631603,
+      "userId": 1753877575325,
+      "title": "Blog 1",
+      "content": "VOV.VN - Dàn máy bay vận tải của Lữ đoàn Không quân 918 (Quân chủng Phòng không - Không quân) tập luyện bay xếp đội hình tại sân bay Gia Lâm, Hà Nội nhằm chuẩn bị thực hiện nhiệm vụ tại Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9.",
+      "createdAt": 1753877631603
+    },
+    {
+      "id": 1753880468557,
+      "userId": 1753877575325,
+      "title": "blog2",
+      "content": "VOV.VN - Dàn máy bay vận tải của Lữ đoàn Không quân 918 (Quân chủng Phòng không - Không quân) tập luyện bay xếp đội hình tại sân bay Gia Lâm, Hà Nội nhằm chuẩn bị thực hiện nhiệm vụ tại Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9.\n",
+      "createdAt": 1753880468557
+    },
+    {
+      "id": 1753880477631,
+      "userId": 1753877575325,
+      "title": "blog 3",
+      "content": "VOV.VN - Dàn máy bay vận tải của Lữ đoàn Không quân 918 (Quân chủng Phòng không - Không quân) tập luyện bay xếp đội hình tại sân bay Gia Lâm, Hà Nội nhằm chuẩn bị thực hiện nhiệm vụ tại Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9.",
+      "createdAt": 1753880477631
+    }
+  ]
+}
