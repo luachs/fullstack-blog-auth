@@ -35,7 +35,7 @@ npm install
 node server.js
 ```
 
-> Server backend sẽ chạy tại `http://localhost:8080`
+> Server backend sẽ chạy tại `http://localhost:3001`
 
 ---
 
@@ -71,6 +71,5 @@ npm run dev
 ## 🗃️ Database
 
 - API đang sử dụng file `db.json` hoặc mô phỏng database (tuỳ cấu hình trong backend).
-- Nếu dùng cơ sở dữ liệu thật (MySQL, MongoDB...) cần cập nhật thêm.
 
 ---
