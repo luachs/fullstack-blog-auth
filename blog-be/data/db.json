@@ -20,14 +20,21 @@
       "email": "user1@gmail.com",
       "password": "$2b$08$d2RJVdA21mXToc32mIlli.cFYoPLX0IAd4QwEJ5nqJHHaJ3PqmqIO",
       "role": "user"
+    },
+    {
+      "id": 1754029139113,
+      "name": "user2",
+      "email": "user123@gmail.com",
+      "password": "$2b$08$hNZDZ6B59fJTCxnrWtoQfeaz0ZddY3gXxmVql0aC47FsF4onGv7ka",
+      "role": "user"
     }
   ],
   "blogs": [
     {
       "id": 1753877631603,
       "userId": 1753877575325,
-      "title": "Blog 1",
-      "content": "VOV.VN - Dàn máy bay vận tải của Lữ đoàn Không quân 918 (Quân chủng Phòng không - Không quân) tập luyện bay xếp đội hình tại sân bay Gia Lâm, Hà Nội nhằm chuẩn bị thực hiện nhiệm vụ tại Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9.",
+      "title": "Tiêu đề mới",
+      "content": "Nội dung mới được cập nhật 1",
       "createdAt": 1753877631603
     },
     {
@@ -43,6 +50,37 @@
       "title": "blog 3",
       "content": "VOV.VN - Dàn máy bay vận tải của Lữ đoàn Không quân 918 (Quân chủng Phòng không - Không quân) tập luyện bay xếp đội hình tại sân bay Gia Lâm, Hà Nội nhằm chuẩn bị thực hiện nhiệm vụ tại Lễ kỷ niệm 80 năm Cách mạng tháng Tám và Quốc khánh 2/9.",
       "createdAt": 1753880477631
+    },
+    {
+      "id": 1753952550353,
+      "userId": 1753877575325,
+      "title": "ok hello",
+      "content": "ncadvadvanbdvasdbvasnbdbasvdbs",
+      "createdAt": 1753952550353
+    },
+    {
+      "id": 1753954027871,
+      "userId": 1753877575325,
+      "title": " Blog 12",
+      "content": "@HoaHongDaiMusicVN\r\n1 năm trước\r\nCHÚC MỌI NGƯỜI CÓ NHỮNG PHÚT GIÂY NGHE NHẠC VUI VẺ. ĐỪNG QUÊN BẤM LIKE, BÌNH LUẬN VÀ ĐĂNG KÝ KÊNH HOA HỒNG DẠI MUSIC NHA\r\n♫ XIN MỜI CHỌN DANH SÁCH PHÁT BÊN DƯỚI",
+      "createdAt": 1753954027871,
+      "fileUrl": "/uploads/1753957711105.png"
+    },
+    {
+      "id": 1753957422482,
+      "userId": 1753877575325,
+      "title": "blog 32",
+      "content": "Top 50 Remix Nghe Nhiều ♫ Chắc Em Đã Quên Rồi, Bên Trên Tầng Lầu, Vương Vấn, Vui Lắm Nha Remix 2023",
+      "createdAt": 1753957422482,
+      "fileUrl": "/uploads/1753957669142.png"
+    },
+    {
+      "id": 1754029518768,
+      "userId": 1753877575325,
+      "title": "Hello Blog",
+      "content": "Đây là nội dung đầu tiên 4",
+      "createdAt": 1754029518768,
+      "fileUrl": null
     }
   ]
 }

@@ -8,7 +8,7 @@
         <input
           v-model="title"
           type="text"
-          class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-400"
+          class="w-full border rounded px-3 py-2"
           placeholder="Nhập tiêu đề blog"
           required
         />
@@ -19,10 +19,15 @@
         <textarea
           v-model="content"
           rows="6"
-          class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-400"
+          class="w-full border rounded px-3 py-2"
           placeholder="Nhập nội dung blog"
           required
         ></textarea>
+      </div>
+
+      <div>
+        <label class="block font-medium">Ảnh minh họa (tuỳ chọn)</label>
+        <input type="file" @change="handleFileChange" accept="image/*" />
       </div>
 
       <button
@@ -34,37 +39,50 @@
     </form>
   </div>
 </template>
-
 <script setup>
-import { ref } from "vue";
-import { useRouter } from "vue-router";
-import { createBlog } from "@/api/blog"; // API phía dưới
+import { ref } from "vue"
+import { useRouter } from "vue-router"
+import axios from "@/api/axiosInstance" // dùng axios trực tiếp
 
-const router = useRouter();
-const title = ref("");
-const content = ref("");
+const router = useRouter()
+const title = ref("")
+const content = ref("")
+const imageFile = ref(null)
+
+const handleFileChange = (e) => {
+  imageFile.value = e.target.files[0]
+}
 
 const handleSubmit = async () => {
-  const user = JSON.parse(localStorage.getItem("user"));
-  if (!user) {
-    alert("Bạn cần đăng nhập để thêm blog");
-    router.push("/login");
-    return;
+  const user = JSON.parse(localStorage.getItem("user"))
+  const token = localStorage.getItem("token")
+  if (!user || !token) {
+    alert("Bạn cần đăng nhập để thêm blog")
+    router.push("/login")
+    return
   }
 
-  const data = {
-    title: title.value,
-    content: content.value,
-    userId: user.id,
-  };
+  const formData = new FormData()
+  formData.append("title", title.value)
+  formData.append("content", content.value)
+  if (imageFile.value) {
+    formData.append("image", imageFile.value)
+  }
 
   try {
-    await createBlog(data);
-    alert("Thêm blog thành công!");
-    router.push("/");
+    await axios.post("/blogs", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        Authorization: `Bearer ${token}`,
+      },
+    })
+
+    alert("✅ Thêm blog thành công!")
+    router.push("/")
   } catch (err) {
-    console.error(err);
-    alert("Thêm blog thất bại!");
+    console.error("❌ Upload lỗi:", err)
+    alert("❌ Thêm blog thất bại!")
   }
-};
+}
+
 </script>

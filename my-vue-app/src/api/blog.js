@@ -1,6 +1,12 @@
 import axios from "./axiosInstance";
 
-export const getBlogs = () => axios.get("/blogs");
+export const getBlogs = ({ search = "", sort = "desc" } = {}) =>
+  axios.get("/blogs", {
+    params: {
+      search,
+      sort,
+    },
+  });
 
 export const getBlogById = (id) => axios.get(`/blogs/${id}`);
 

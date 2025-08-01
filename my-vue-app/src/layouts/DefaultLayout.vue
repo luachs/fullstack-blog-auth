@@ -41,6 +41,7 @@ const { isLoggedIn, user, checkLoginStatus, handleLogout } = useAuth();
 
 onMounted(() => {
   checkLoginStatus();
+
 });
 
 watch(route, () => {

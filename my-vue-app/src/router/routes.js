@@ -4,8 +4,6 @@ export const routes = [
   { path: '/register', component: () => import('@/views/Register.vue') },
   { path: '/profile', component: () => import('@/views/Profile.vue') },
   { path: '/blog/new', component: () => import('@/views/BlogForm.vue') },
-  { path: '/blog/edit/:id', component: () => import('@/views/BlogForm.vue'), props: true },
-  {path: "/add",name: "AddBlog",component: () => import("@/views/AddBlog.vue"),
-}
-
-];
+  { path: '/blog/edit/:id', component: () => import('@/views/EditBlog.vue'), props: true },
+  { path: '/add', name: 'AddBlog', component: () => import('@/views/AddBlog.vue') },
+]
